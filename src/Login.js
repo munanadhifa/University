@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router'
 import { Card, Form, Button } from 'react-bootstrap'
+import { NavLink } from 'react-router-dom';
 
 class Login extends Component {
   render() {
@@ -23,8 +24,11 @@ class Login extends Component {
                   <Form.Label>Password</Form.Label>
                   <Form.Control type="password" placeholder="Password" />
                 </Form.Group>
-                <Button variant="primary" type="submit" style={{ marginBottom: '20px' }}>
+                <Button variant="primary" type="submit" style={{ marginBottom: '20px'}}>
+                  <NavLink exact to="/" style={{ color: 'white' }}>
                   Submit
+                  </NavLink>
+
   </Button>
               </Form>
             </Card>
